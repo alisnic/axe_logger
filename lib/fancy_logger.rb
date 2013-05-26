@@ -9,18 +9,23 @@ class FancyLogger < Logger
 
   COLOR_CONFIG = {
     :debug => GREEN,
-    :info => BLUE,
-    :warn => PURPLE,
+    :info =>  BLUE,
+    :warn =>  PURPLE,
     :error => RED
   }
 
   STACK_LEVEL = 1
   STACK_EXP   = /(?<file>.+):(?<line>\d+):.*`(?<func>.+)'/
-  DATE_FORMAT = '%m/%d/%Y %H:%M:%S'
+
+  attr_accessor :date_format
+  def initialize (*opts)
+    @date_format = '%m/%d/%Y %H:%M:%S'
+    super
+  end
 
   def format_message severity, datetime, progname, msg
     m = STACK_EXP.match caller[STACK_LEVEL+1].split('/').last
-    time = datetime.strftime DATE_FORMAT
+    time = datetime.strftime date_format
     "#{print_severity(severity)} \t#{time} #{m[:file]}:#{m[:line]} (#{m[:func]}):
     \t#{msg}\n\n"
   end
