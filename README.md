@@ -25,7 +25,7 @@ It's the same logger you use every day:
 except it colores warning levels, and prints out th file, line, and function
 from which it was called:
 
-![screenshot]("https://github.com/alisnic/fancy_logger/raw/master/screenshot.png screnshot")
+![screenshot]("https://github.com/alisnic/fancy_logger/raw/master/screenshot.png "screnshot")
 
 ## Contributing
 
