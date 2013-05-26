@@ -27,7 +27,7 @@ It's the same logger you use every day:
     l.warn 'OH WAIT! Something suspicious'
     l.error 'ACHTUNG! ZIE BIG ERROR'
 
-except it colores warning levels, and prints out th file, line, and function
+except it colores warning levels, and prints out the file, line, and function
 from which it was called:
 
 ![screenshot](https://raw.github.com/alisnic/fancy_logger/master/screenshot.png "screnshot")
