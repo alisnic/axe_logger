@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+It's the same logger you use every day:
+
+    l = FancyLogger.new(STDOUT)
+
+except it colores warning levels, and prints out th file, line, and function
+from which it was called:
+
+    ![screenshot]("https://github.com/alisnic/fancy_logger/raw/master/screenshot.png screnshot")
 
 ## Contributing
 
