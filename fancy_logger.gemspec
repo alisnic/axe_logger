@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["andrei.lisnic@gmail.com"]
   spec.description   = %q{The same logger, only with colored outupt ant line numbers and functions}
   spec.summary       = %q{the same logger, only a bit fancier}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/alisnic/fancy_logger"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
