@@ -21,11 +21,16 @@ Or install it yourself as:
 It's the same logger you use every day:
 
     l = FancyLogger.new(STDOUT)
+    l.level = 0
+    l.debug 'debugging is easy'
+    l.info 'informing as well'
+    l.warn 'OH WAIT! Something suspicious'
+    l.error 'ACHTUNG! ZIE BIG ERROR'
 
 except it colores warning levels, and prints out th file, line, and function
 from which it was called:
 
-![screenshot]("https://github.com/alisnic/fancy_logger/raw/master/screenshot.png "screnshot")
+![screenshot](https://raw.github.com/alisnic/fancy_logger/master/screenshot.png "screnshot")
 
 ## Contributing
 
