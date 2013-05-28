@@ -5,13 +5,13 @@ require 'logger'
 VERSION = '0.0.1'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fancy_logger"
+  spec.name          = "axe_logger"
   spec.version       = VERSION
   spec.authors       = ["Andrei Lisnic"]
   spec.email         = ["andrei.lisnic@gmail.com"]
-  spec.description   = %q{The same logger, only with colored outupt ant line numbers and functions}
+  spec.description   = %q{The same logger, only with colored output and line numbers and functions}
   spec.summary       = %q{the same logger, only a bit fancier}
-  spec.homepage      = "https://github.com/alisnic/fancy_logger"
+  spec.homepage      = "https://github.com/alisnic/axe_logger"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

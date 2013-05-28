@@ -1,4 +1,4 @@
-class FancyLogger < Logger
+class AxeLogger < Logger
   module Colors
     RED     = '0;31'
     GREEN   = '0;32'
@@ -26,15 +26,13 @@ class FancyLogger < Logger
   def format_message severity, datetime, progname, msg
     m = STACK_EXP.match caller[STACK_LEVEL+1].split('/').last
     time = datetime.strftime date_format
-    "#{print_severity(severity)} \t#{time} #{m[:file]}:#{m[:line]} (#{m[:func]}):
-    \t#{msg}\n\n"
+    color = COLOR_CONFIG[severity.downcase.to_sym]
+
+    string_with_color("#{time} #{m[:file]}:#{m[:line]} (#{m[:func]}): ", color) +
+    "#{msg}\n"
   end
 
   private
-
-  def print_severity severity
-    string_with_color severity, COLOR_CONFIG[severity.downcase.to_sym]
-  end
 
   def string_with_color str, color
     "\e[#{color}m#{str}\e[0;0m"

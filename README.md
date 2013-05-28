@@ -1,4 +1,4 @@
-# FancyLogger
+# AxeLogger
 
 Standard Ruby logger, except fancier.
 
