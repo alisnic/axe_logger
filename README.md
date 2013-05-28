@@ -6,7 +6,7 @@ Standard Ruby logger, except fancier.
 
 Add this line to your application's Gemfile:
 
-    gem 'fancy_logger'
+    gem 'axe_logger'
 
 And then execute:
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 It's the same logger you use every day:
 
-    l = FancyLogger.new(STDOUT)
+    l = AxeLogger.new(STDOUT)
     l.level = 0
     l.debug 'debugging is easy'
     l.info 'informing as well'
@@ -30,7 +30,7 @@ It's the same logger you use every day:
 except it colores warning levels, and prints out the file, line, and function
 from which it was called:
 
-![screenshot](https://raw.github.com/alisnic/fancy_logger/master/screenshot.png "screnshot")
+![screenshot](https://raw.github.com/alisnic/axe_logger/master/screenshot.png "screnshot")
 
 ## Contributing
 
